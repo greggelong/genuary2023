@@ -77,6 +77,7 @@ function moveit() {
     xsp *= -1;
     myclrindex= floor(random(1,clrs.length));
     grid[y][x]=myclrindex
+    console.log("hit a mountain",x,y)
     
   } else{
   grid[y][x] = myclrindex;
@@ -93,6 +94,7 @@ function checkhit() {
     xsp *= -1;
     myclrindex = floor(random(1,clrs.length));
     grid[y][x]= myclrindex
+    console.log("hit left or right!!",x,y)
   
   }
 
@@ -102,6 +104,7 @@ function checkhit() {
     ysp *= -1;
     myclrindex= floor(random(1,clrs.length));
     grid[y][x]=myclrindex
+    console.log("hit top or bottom",x,y)
   }
   
  
