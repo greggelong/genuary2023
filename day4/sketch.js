@@ -14,8 +14,8 @@ let cnv;
 
 function setup() {
   cnv = createCanvas(600, 600);
-  cx = (windowWidth-width)/2
-  cy = (windowHeight-height)/2
+  cx = (windowWidth-cnv.width)/2
+  cy = (windowHeight-cnv.height)/2
   cnv.position(cx,cy);
   background(0);
 
