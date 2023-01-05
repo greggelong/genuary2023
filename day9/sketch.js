@@ -119,7 +119,7 @@ function turtle(inString, clr,p){
 
 function keyPressed() {
    if (key === 'g') {
-    saveGif('intersect2', 15);
+    saveGif('bitriplants', 18);
   }
   if (key === 's') {
     saveCanvas('intersect2', 'jpg');
