@@ -8,6 +8,7 @@ let theta=0
 let sunny;
 let cnv;
 let output;
+let output2
 
 
 function setup() {
@@ -17,9 +18,14 @@ function setup() {
   cnv.position(cx,cy);  
    
   angleMode(DEGREES)
+
   output = createDiv('this is some text');
-  output.style('font-size', '30px');
-  output.position(windowWidth/4, 20);
+  output.style('font-size', '18px');
+  output.position(windowWidth/4, 10);
+
+  output2 = createDiv('this is some text');
+  output2.style('font-size', '18px');
+  output2.position(windowWidth/4, 32);
   frameRate(20)
 }
 
@@ -35,7 +41,8 @@ function draw(){
   stroke(0)
   fill(178,197,178,shine)
   ellipse(width/2,suny,200,200)
-  output.html("tri-tree"+tritreenum.toString(3))
+  output.html("tri-tree, trinary number: "+tritreenum.toString(3)+" :0 left, 1 right, 2 middle")
+  output2.html("bi-tree, binary number: "+bitreenum.toString(2)+" :0 left, 1 right")
   doTree(width/4,tritreenum,3,color(107,142,78,shine));
   doTree(width-width/4,bitreenum,2, color(60,81,72,shine));
 
