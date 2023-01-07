@@ -2,13 +2,14 @@ let turn = 60.9 // turning angle controled by mouseX
 
 let bitreenum=0
 let tritreenum=0
-let srink = 0.66
+let srink = 0.76
 let theta=0
 
 let sunny;
 let cnv;
 let output;
 let output2
+
 
 
 function setup() {
@@ -73,7 +74,7 @@ function turtle(inString, clr,p){
   ///let turn = 30; make global
   //let ang =90;
   let instr = inString.split(""); // split
-  let sz = 150;
+  let sz = 150; // local as it need to resize for every branch path
   let x = p;
   let y = height
  // let  x1= x+sz*cos(ang)  // x1 = x + amount * cos (theta)
