@@ -9,7 +9,7 @@ let clrs;
 let cnv;
 
 function preload() {
-  img = loadImage("blacktess.png");
+  img = loadImage("gregtessa2.png");
   
 
 }
@@ -18,9 +18,7 @@ function setup() {
   cnv = createCanvas(800, 800);
   let cx = (windowWidth-cnv.width)/2
   let cy = (windowHeight-cnv.heitht)/2
-  cnv.position(cx,cy)
-
-  img.filter(INVERT) // change from blact to white so the tint takes
+  //img.filter(INVERT) // change from blact to white so the tint takes
   clrs = [
     color(90, 61, 43),
     color(117, 200, 174),
@@ -39,7 +37,8 @@ function draw() {
   background(255, 255, 0);
   
   for (let j = -1; j < 10; j++) {
-    for (let i = 0; i < 11; i++) {
+    for (let i = -1; i < 10; i++) {
+      img.filter(INVERT)
       let myclr = random(clrs);
       printleaf(i,j,sz, myclr);
     }
@@ -51,16 +50,15 @@ function draw() {
 function printleaf(x, y, sz, clr) {
   
   
-  img.resize(sz+36, sz+36);
+  img.resize(sz+99, sz+99);
   tint(clr);
   image(img, x*sz-offs, y*sz);
 }
-
 function keyPressed() {
   if (key === 'g') {
-   saveGif('tessa.gif', 15);
+   saveGif('tessaface.gif', 15);
  }
  if (key === 's') {
-   saveCanvas('tessa', 'jpg');
+   saveCanvas('tessaface', 'jpg');
  }
 }
