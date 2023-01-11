@@ -31,7 +31,7 @@ function setup() {
     color(150,61,151),
     color(97,187,70)
   ];
-  frameRate(9)
+  frameRate(5)
  
 }
 
