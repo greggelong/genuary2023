@@ -18,6 +18,8 @@ function setup() {
   cnv = createCanvas(800, 800);
   let cx = (windowWidth-cnv.width)/2
   let cy = (windowHeight-cnv.heitht)/2
+  cnv.position(cx,cy)
+
   img.filter(INVERT) // change from blact to white so the tint takes
   clrs = [
     color(90, 61, 43),
@@ -37,7 +39,7 @@ function draw() {
   background(255, 255, 0);
   
   for (let j = -1; j < 10; j++) {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 11; i++) {
       let myclr = random(clrs);
       printleaf(i,j,sz, myclr);
     }
@@ -56,7 +58,7 @@ function printleaf(x, y, sz, clr) {
 
 function keyPressed() {
   if (key === 'g') {
-   saveGif('suprem.gif', 15);
+   saveGif('tessa.gif', 15);
  }
  if (key === 's') {
    saveCanvas('suprem', 'jpg');
