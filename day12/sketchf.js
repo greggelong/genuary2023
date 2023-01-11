@@ -18,6 +18,7 @@ function setup() {
   cnv = createCanvas(800, 800);
   let cx = (windowWidth-cnv.width)/2
   let cy = (windowHeight-cnv.heitht)/2
+  cnv.position(cx,xy);
   //img.filter(INVERT) // change from blact to white so the tint takes
   clrs = [
     color(90, 61, 43),
