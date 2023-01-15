@@ -63,8 +63,11 @@ function showGrid() {
 
 function keyPressed() {
   // this will download the first 25 seconds of the animation!
-  if (key === 's') {
-    makeGrid()
-    saveGif('sine5.gif', 20);
+  if (key === 'g') {
+    saveGif('sineW.gif', 15);
   }
+  if (key === 's') {
+    saveCanvas('sineW', 'jpg');
+  }
+  
 }
