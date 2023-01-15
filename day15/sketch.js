@@ -19,7 +19,7 @@ function setup() {
   //frameRate(5)
   noStroke();
   angleMode(DEGREES)
-  frameRate(15)
+  //frameRate(15)
 }
 
 function draw(){
