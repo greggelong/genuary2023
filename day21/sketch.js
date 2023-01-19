@@ -111,7 +111,7 @@ function showGrid() {
   }
 }
 
-
+// this is not working well for gif
 
 function keyPressed() {
   // this will download the first 25 seconds of the animation!
