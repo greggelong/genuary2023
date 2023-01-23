@@ -2,6 +2,10 @@
 
 a place to hold code
 
+some code is here 
+
+some sketches are on the p5 web editor
+
 Day 8 signed distance functions #genuary #genuary2023 #genuary8
 
 I have never used sdf before.  It was a very different approach for drawing shapes to the canvas.
